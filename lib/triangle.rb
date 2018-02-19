@@ -8,6 +8,8 @@ class Triangle
   end
 
   def kind
-
+    if self.l1 == self.l2 && self.l2 == self.l3
+      self.kind = @equilateral 
+    elsif 
   end
 end
