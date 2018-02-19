@@ -10,9 +10,9 @@ class Triangle
   end
 
   def kind
-    binding.pry
     if self.l1 == self.l2 && self.l2 == self.l3
       self.kind = @equilateral
     end
+    binding.pry
   end
 end
