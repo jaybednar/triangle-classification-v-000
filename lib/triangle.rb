@@ -15,4 +15,8 @@ class Triangle
     # end
     # self.kind
   end
+
+  class TriangleError < StandardError
+ # triangle error code
+  end
 end
