@@ -1,7 +1,7 @@
 require 'pry'
 
 class Triangle
-  attr_accessor :kind, :equilateral, :isosceles, :scalene, :l1, :l2, :l3
+  attr_accessor :type, :equilateral, :isosceles, :scalene, :l1, :l2, :l3
 
   def initialize(l1, l2, l3)
     @l1 = l1
@@ -10,10 +10,10 @@ class Triangle
   end
 
   def kind
-    # if self.l1 == self.l2 && self.l2 == self.l3
-    #   self.kind = @equilateral
-    # end
-    # self.kind
+    if self.l1 == self.l2 && self.l2 == self.l3
+      self.type = @equilateral
+    end
+    self.type
   end
 
   class TriangleError < StandardError
