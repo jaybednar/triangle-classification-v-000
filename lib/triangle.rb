@@ -11,7 +11,7 @@ class Triangle
 
   def kind
     if self.l1 == self.l2 && self.l2 == self.l3
-      self.type = @equilateral
+      self.type = :equilateral
     end
     self.type
   end
