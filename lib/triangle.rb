@@ -6,17 +6,17 @@ class Triangle
 
   def initialize(a, b, c)
     if a <= 0 || b <= 0 || c <= 0
-      begin
+      # begin
         raise TriangleError
-      rescue TriangleError => error
-        error.invalid_side_length
-      end
+      # rescue TriangleError => error
+        # error.invalid_side_length
+      # end
     elsif (!(a + b > c) || !(a + c > b) || !(b + c > a))
-      begin
+      # begin
         raise TriangleError
-      rescue TriangleError => error
-        error.invalid_triangle
-      end
+      # rescue TriangleError => error
+        # error.invalid_triangle
+      # end
     else
       @a = a
       @b = b
