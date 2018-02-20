@@ -24,6 +24,7 @@ class Triangle
 end
 
 class TriangleError < StandardError
+  
   def no_size_message
     "Your triangle cannot have 0 as a side length."
   end
