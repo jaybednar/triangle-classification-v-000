@@ -41,14 +41,16 @@ class Triangle
 
 end
 
-class TriangleError < StandardError
+module TriangleErrors 
+  class TriangleError < StandardError
 
-  def invalid_side_length
-    "No side of your triangle may have any side length less than or equal to 0."
+    def invalid_side_length
+      "No side of your triangle may have any side length less than or equal to 0."
+    end
+
+    def invalid_triangle
+      "The sum of the lengths of any two sides of a triangle must exceed the length of the third side."
+    end
+
   end
-
-  def invalid_triangle
-    "The sum of the lengths of any two sides of a triangle must exceed the length of the third side."
-  end
-
-end
+end 
