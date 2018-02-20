@@ -5,7 +5,7 @@ class Triangle
   attr_accessor :type, :a, :b, :c
 
   def initialize(a, b, c)
-    if a <= 0 || b <= 0 || c <= 0
+    if a = 0 || b = 0 || c = 0
       begin
         raise TriangleError
       rescue TriangleError => error
