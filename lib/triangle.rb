@@ -16,6 +16,7 @@ class Triangle
       self.type = :isosceles
     else
       self.typ = :scalene
+    end 
     self.type
   end
 
