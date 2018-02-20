@@ -41,7 +41,7 @@ end
 class TriangleError < StandardError
 
   def invalid_side_length
-    "No side of your triangle may have any side length less than or equal to 0"
+    "No side of your triangle may have any side length less than or equal to 0."
   end
 
   def invalid_triangle
