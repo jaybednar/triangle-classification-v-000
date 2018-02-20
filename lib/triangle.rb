@@ -10,13 +10,13 @@ class Triangle
     if a <= 0 || b <= 0 || c <= 0
       begin
         raise TriangleError
-      rescue TriangleError=> error
+      rescue TriangleError => error
         error.invalid_side_length
       end
     elsif (!(a + b > c) || !(a + c > b) || !(b + c > a))
       begin
         raise TriangleError
-      rescue TriangleError=> error
+      rescue TriangleError => error
         error.invalid_triangle
       end
     else
