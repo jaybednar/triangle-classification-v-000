@@ -4,19 +4,19 @@ class Triangle
   attr_accessor :type, :a, :b, :c
 
   def initialize(a, b, c)
-    if a <= 0 || b <= 0 || c <= 0 
+    if a <= 0 || b <= 0 || c <= 0
       begin
         raise TriangleError
       rescue TriangleError=> error
         error.no_size_message
-      end 
-    elsif a 
+      end
+    elsif a
 
     @a = a
     @b = b
     @c = c
 
-    
+
   end
 
   def kind
@@ -34,15 +34,11 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  
+
   def no_size_message
-    "Your triangle cannot have 0 as a side length."
+    "No side of your triangle may have any side length less than or equal to 0"
   end
-
-  def negative_side_length
-    "Your triangle cannot have a negative number as a side length."
-  end
-
+  
   def violating_triangle_inequality
     "Invalid triangle. The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
   end
