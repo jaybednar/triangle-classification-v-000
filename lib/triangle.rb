@@ -4,17 +4,17 @@ class Triangle
   attr_accessor :type, :a, :b, :c
 
   def initialize(a, b, b)
-    @a = a 
-    @b = b 
-    @c = c 
+    @a = a
+    @b = b
+    @c = c
   end
 
   def kind
     if self.a == self.b && self.b == self.c
       self.type = :equilateral
-    elsif self.a == self.b || self.a == self.c || self.b == self.c 
-      self.type = :isosceles 
-    else 
+    elsif self.a == self.b || self.a == self.c || self.b == self.c
+      self.type = :isosceles
+    end
     self.type
   end
 
