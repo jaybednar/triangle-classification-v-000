@@ -1,8 +1,8 @@
 require 'pry'
 
 class Triangle
-  Triangle::TriangleError
-  include TriangleError
+
+  include TriangleErrors
 
   attr_accessor :type, :a, :b, :c
 
