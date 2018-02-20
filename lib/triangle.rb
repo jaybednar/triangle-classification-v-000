@@ -36,7 +36,6 @@ class Triangle
     self.type
   end
 
-
 end
 
 class TriangleError < StandardError
