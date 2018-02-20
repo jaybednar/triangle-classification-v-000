@@ -15,8 +15,8 @@ class Triangle
     elsif self.a == self.b || self.a == self.c || self.b == self.c
       self.type = :isosceles
     else
-      self.typ = :scalene
-    end 
+      self.type = :scalene
+    end
     self.type
   end
 
