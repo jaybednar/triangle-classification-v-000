@@ -5,13 +5,13 @@ class Triangle
   attr_accessor :type, :a, :b, :c
 
   def initialize(a, b, c)
-    if self.a <= 0 || self.b <= 0 || self.c <= 0
+    if a <= 0 || b <= 0 || c <= 0
       begin
         raise TriangleError
       rescue TriangleError => error
         error.invalid_side_length
       end
-    elsif (!(self.a + self.b > self.c) || !(self.a + self.c > self.b) || !(self.b + self.c > self.a))
+    elsif (!(a + b > c) || !(a + c > b) || !(b + c > a))
       begin
         raise TriangleError
       rescue TriangleError => error
