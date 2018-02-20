@@ -8,9 +8,9 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError=> error
-        error.no_size_message
+        error.invalid_side_length
       end
-    elsif a
+    elsif 
 
     @a = a
     @b = b
