@@ -41,7 +41,7 @@ class Triangle
 
 end
 
-module TriangleErrors 
+module TriangleErrors
   class TriangleError < StandardError
 
     def invalid_side_length
@@ -53,4 +53,4 @@ module TriangleErrors
     end
 
   end
-end 
+end
