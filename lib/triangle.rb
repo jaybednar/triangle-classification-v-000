@@ -35,12 +35,12 @@ end
 
 class TriangleError < StandardError
 
-  def no_size_message
+  def invalid_side_length
     "No side of your triangle may have any side length less than or equal to 0"
   end
-  
-  def violating_triangle_inequality
-    "Invalid triangle. The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
+
+  def invalid_triangle
+    "The sum of the lengths of any two sides of a triangle must exceed the length of the third side."
   end
 
 end
