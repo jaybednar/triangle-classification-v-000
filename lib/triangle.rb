@@ -11,10 +11,16 @@ class Triangle
         error.invalid_side_length
       end
     elsif (!(a + b > c) || !(a + c > b) || !(b + c > a))
-
-    @a = a
-    @b = b
-    @c = c
+      begin
+        raise TriangleError
+      rescue TriangleError=> error
+        error.invalid_triangle
+      end
+    else
+      @a = a
+      @b = b
+      @c = c
+    end
 
 
   end
