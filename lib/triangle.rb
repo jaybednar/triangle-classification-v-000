@@ -20,7 +20,13 @@ class Triangle
     self.type
   end
 
-  class TriangleError < StandardError
- # triangle error code
+
+end
+
+class TriangleError < StandardError
+  def no_size_message 
+    "Your triangle cannot have 0 as a side length."
   end
+
+  def
 end
