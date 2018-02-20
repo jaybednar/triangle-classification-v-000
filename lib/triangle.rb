@@ -3,7 +3,7 @@ require 'pry'
 class Triangle
   attr_accessor :type, :a, :b, :c
 
-  def initialize(a, b, b)
+  def initialize(a, b, c)
     @a = a
     @b = b
     @c = c
