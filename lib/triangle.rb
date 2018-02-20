@@ -1,18 +1,20 @@
 require 'pry'
 
 class Triangle
-  attr_accessor :type, :l1, :l2, :l3
+  attr_accessor :type, :a, :b, :c
 
-  def initialize(l1, l2, l3)
-    @l1 = l1
-    @l2 = l2
-    @l3 = l3
+  def initialize(a, b, b)
+    @a = a 
+    @b = b 
+    @c = c 
   end
 
   def kind
-    if self.l1 == self.l2 && self.l2 == self.l3
+    if self.a == self.b && self.b == self.c
       self.type = :equilateral
-    end
+    elsif self.a == self.b || self.a == self.c || self.b == self.c 
+      self.type = :isosceles 
+    else 
     self.type
   end
 
