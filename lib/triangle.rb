@@ -1,8 +1,9 @@
 require 'pry'
 
 class Triangle
+  Triangle::TriangleError
   include TriangleError
-  
+
   attr_accessor :type, :a, :b, :c
 
   def initialize(a, b, c)
