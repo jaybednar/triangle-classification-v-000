@@ -10,7 +10,7 @@ class Triangle
       rescue TriangleError=> error
         error.invalid_side_length
       end
-    elsif 
+    elsif (!(a + b > c) || !(a + c > b) || !(b + c > a))
 
     @a = a
     @b = b
