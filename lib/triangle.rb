@@ -24,9 +24,16 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  def no_size_message 
+  def no_size_message
     "Your triangle cannot have 0 as a side length."
   end
 
-  def
+  def negative_side_length
+    "Your triangle cannot have a negative number as a side length."
+  end
+
+  def violating_triangle_inequality
+    "Invalid triangle. The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
+  end
+
 end
